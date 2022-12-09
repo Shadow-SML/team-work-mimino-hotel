@@ -1,1 +1,77 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+// variables timing scss
+$transition-dur: 250ms;
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+// variables device format
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--title-text-color);
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.16;
+    }
+}
+
