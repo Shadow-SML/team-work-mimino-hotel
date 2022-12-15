@@ -1,5 +1,9 @@
-@import './common';
-@import './container';
+@import './utils/common';
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/container';
 
 @import './header';
 @import './hero-section';
+@import './footer';
+
